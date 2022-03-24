@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+}
+
+/* BASE STYLES
+================================================= */
+
+body {
+    font-family: 'Cairo', Arial, Helvetica, sans-serif;
+    color: #2e3e51;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    background: #2e3e51;
+    color: white;
+    margin-top: 0;
+    padding: 15px 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: larger;
+    font-weight: 600;
+}
+
+main {
+    background: #2e3e51;
+}
+
+form {
+    margin: 0 auto;
+    width: 75%;
+    padding: 1em;
+    background: #3c3c3c;
+    color: white;
+}
+
+h2 {
+    padding-left: 12px;
+}
+
+.number {
+    background-color: white;
+    color: #2e3e51;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    font-size: 1em;
+    margin-right: 10px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 100%;
+}
+
+.contact, .newsletter {
+    border: none;
+}
+
+.contact {
+    border-bottom: 3px solid white;
+    text-align: left;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ .contact ul li label {
+    text-align: left;
+    display: flex;
+    font-size: larger;
+ } 
+
+ .contact input, select {
+     background: #b4b4b4;
+     width: 100%;
+     height: 7vh;
+ }
+
+ input:focus, select:focus, textarea:focus, button:focus {
+     border: 2px solid turquoise;
+     outline: 2px solid turquoise;
+ }
+
+ ::placeholder {
+     text-align: right;
+     font-style: italic;
+ }
+
+input[id="zip"] {
+    width: 50%;
+}
+
+.newsletter {
+    font-size: large;
+}
+
+.newsletter h3 {
+    margin-top: 30px;
+}
+
+textarea {
+    width: 100%;
+    height: 10vh;
+    margin-top: 15px;
+}
+
+button {
+    width: 100%;
+    height: 7vh;
+    background: #2e3e51;
+    color: white;
+    text-transform: uppercase;
+    font-size: larger;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    font-size: large;
+    font-weight: 500;
+}
+
+/* MEDIA QUERIES 
+========================================================================= */
+
+@media screen and (min-width: 768px) {
+    .contact ul li label {
+        display: inline;
+}
+    .contact input, .contact select{
+        width: 50%;
+        margin: 0 0 10px 10px;
+    }
+
+    label[for="name"] {
+        margin-right: 40px;
+    }
+
+    label[for="email"] {
+        margin-right: 77px;
+    }
+
+    label[for="address"] {
+        margin-right: 3px;
+    }
+
+    label[for="city"] {
+        margin-right: 90px;
+    }
+
+    label[for="state"] {
+        margin-right: 78px;
+    }
+
+    label[for="zip"] {
+        margin-right: 52px;
+    }
+
+    input[id="zip"] {
+        width: 25%;
+    }
+
+    textarea {
+        height: 20vh;
+    }
+}
+
+@media screen and (min-width: 836px) {
+    .contact input, .contact select{
+        width: 75%;
+        margin: 0 0 10px 10px;
+    }
+
+    input[id="zip"] {
+        width: 25%;
+    }
+}
+
